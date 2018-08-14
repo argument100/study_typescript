@@ -81,20 +81,59 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/main.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/main.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/main.ts":
-/*!*********************!*\
-  !*** ./src/main.ts ***!
-  \*********************/
+/***/ "./src/css/main.scss":
+/*!***************************!*\
+  !*** ./src/css/main.scss ***!
+  \***************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var Greeter = /** @class */ (function () {\n    function Greeter(message) {\n        this.greeting = message;\n    }\n    Greeter.prototype.greet = function () {\n        return \"Hello, \" + this.greeting;\n    };\n    return Greeter;\n}());\nvar greeter = new Greeter(\"world\");\nvar button = document.createElement('button');\nbutton.textContent = \"Say Hello\";\nbutton.onclick = function () {\n    alert(greeter.greet());\n};\ndocument.body.appendChild(button);\n\n\n//# sourceURL=webpack:///./src/main.ts?");
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/js/_sampleMod.ts":
+/*!******************************!*\
+  !*** ./src/js/_sampleMod.ts ***!
+  \******************************/
+/*! exports provided: echoLog */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "echoLog", function() { return echoLog; });
+function echoLog() {
+    console.log('typescript OK!!');
+}
+
+
+/***/ }),
+
+/***/ "./src/js/main.ts":
+/*!************************!*\
+  !*** ./src/js/main.ts ***!
+  \************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _sampleMod__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_sampleMod */ "./src/js/_sampleMod.ts");
+/* harmony import */ var _css_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/main.scss */ "./src/css/main.scss");
+/* harmony import */ var _css_main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_main_scss__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var body = document.getElementsByTagName('body')[0];
+body.classList.add('sky');
+Object(_sampleMod__WEBPACK_IMPORTED_MODULE_0__["echoLog"])();
+
 
 /***/ })
 
 /******/ });
+//# sourceMappingURL=main.js.map

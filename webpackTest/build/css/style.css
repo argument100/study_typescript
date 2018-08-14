@@ -1,0 +1,27 @@
+@charset "UTF-8";
+html,
+body {
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, "\6E38\30B4\30B7\30C3\30AF   Medium", "Yu Gothic Medium", "\6E38\30B4\30B7\30C3\30AF\4F53", YuGothic, "\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3", "Hiragino Kaku Gothic ProN", "\30E1\30A4\30EA\30AA", Meiryo, sans-serif;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt"; }
+
+p {
+  font-size: 12px;
+  font-weight: bold; }
+
+.sky {
+  background-color: #E0FFFF; }
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/*# sourceMappingURL=style.css.map*/
