@@ -1,4 +1,6 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
+
 
 module.exports = {
   // モード値を production に設定すると最適化された状態で、
@@ -19,6 +21,11 @@ module.exports = {
     new ExtractTextPlugin({
       filename: './css/style.css'
     }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    })
   ],
 
   // import 文で .ts ファイルを解決するため
