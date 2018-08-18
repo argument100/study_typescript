@@ -1,6 +1,6 @@
-import { echoLog } from './_sampleMod';
-import { DropEvent } from './_DropEvent';
+import { GreetEvent } from './_GreetEvent';
 import '../css/main.scss';
 
-namespace CM {
-}
+
+let dropEvent = new GreetEvent('yaaaa!!!');
+dropEvent.greeting();
