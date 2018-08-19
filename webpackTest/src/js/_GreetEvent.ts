@@ -1,11 +1,11 @@
 export class GreetEvent {
 
   // コンストラクター
-  constructor(private greet: string) {
+  constructor(private data: {[greet: string] : string}) {
   }
 
   // メソッド
     public greeting() : void {
-      $('.js-test').text(this.greet);
+      $('.js-test').text(this.data.greet);
     }
 }
